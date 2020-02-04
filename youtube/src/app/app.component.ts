@@ -14,7 +14,7 @@ export class AppComponent {
   ngOnInit() {
     
     this.youTubeService
-    .getVideosForChanel('UCDPM_n1atn2ijUwHd0NNRQw', 20)
+    .getVideosForChanel('', 20)
     .subscribe(lista => {
     for (let element of lista["items"]) {
       this.videos.push(element)
